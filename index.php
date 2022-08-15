@@ -16,7 +16,7 @@
 
 			require 'user2.php';
 			$user = new User();
-			//we're passing the parameters to the method register and printing the result to the screen
+			//we're passing the parameters to the method register and printing the result
 			echo $user->register("Lucas","lucas.roseira@fatec.sp.gov.br","IT support", 26);
 		
 
