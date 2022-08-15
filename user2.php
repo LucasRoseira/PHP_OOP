@@ -8,7 +8,7 @@ class User {
 	public $occupation; 
 
 	public function register($name, $email, $occupation, $age) {
-		//We used this because it's a pseudo class used to instanciate the attribute
+		//We used '$this' because it's a pseudo class used to instanciate the attribute
 		$this->name = $name;
 		$this->age = $age;
 		$this->email = $email;
