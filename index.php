@@ -16,7 +16,7 @@
 
 			require 'user2.php';
 			$user = new User();
-			//We're passing the parameters to the method register and printing the result to the screen
+			//we're passing the parameters to the method register and printing the result to the screen
 			echo $user->register("Lucas","lucas.roseira@fatec.sp.gov.br","IT support", 26);
 		
 
@@ -25,13 +25,13 @@
 			?>
 
 			<?php 
-			/*we've to call the other file that contais our class*/
+			/*we've to call the other file that contains our class*/
 			require 'user.php';
 
-			/*'new' is a reserved word so you can't used it.*/
+			/*'new' is a reserved word so you can't use it.*/
 			$user = new User();
 
-			/*When we call the method it'll simply return the phrase*/
+			/*when we call the method it'll simply return the phrase*/
 			$msg = $user->register();
 			echo $msg;
 			?>
