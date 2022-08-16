@@ -17,7 +17,7 @@ class Users2 {
 		//We use . (dot) to concatenate strings in php, but we could use this form too = {this->} 
 		return "The user <strong> &nbsp;" . 
 		$this->name . "&nbsp;</strong> has the e-mail <strong> &nbsp; 
-		{$this->email }&nbsp; </strong> and works like a(n) <strong> &nbsp;" . 
+		{$this->email}&nbsp; </strong> and works like a(n) <strong> &nbsp;" . 
 		$this->occupation ."</strong> and has {$this->age} years old"; 
 	}
 }
