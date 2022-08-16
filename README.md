@@ -4,13 +4,26 @@ OOP course to recalling and MVC
 you can study here: https://www.udemy.com/course/curso-de-php-orientado-a-objetos/
 
 I'm using XAMPP Control Panel v3.2.4
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Tempo de geração: 16-Ago-2022 às 21:21
+-- Versão do servidor: 10.4.14-MariaDB
+-- versão do PHP: 7.4.10
 
+
+
+**Running the Project**
+
+Install XAMPP
 You can download here: https://www.apachefriends.org/pt_br/download.html
-
-To run the project you need to start Apache and MySQL(I'm going to commit them database later)
-You need to put your PHP files inside the HTDOCS folder that is located 
+Now you need to start Apache and MySQL using XAMPP.
+Put your PHP files inside the HTDOCS folder that is located. 
 in C://xampp/ (it depends where did you installed it).
-
+After that, go to http://localhost/phpmyadmin/ and import the database using the SQL script
+in assets/sql/lucas.php
 Then you need to open your browser and type "localhost/YOURFOLDER".
 
 Obs: 
