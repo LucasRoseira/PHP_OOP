@@ -2,35 +2,35 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset = "UTF-8">
-	<link rel="stylesheet" type="text/css" href="assets/index.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets//css/index.css">
+	<script type="text/javascript" src="assets/js/index.js"></script>
 
 	<title> Celke - Classes, Objects, Methods and Attributes</title>
 </head>
 
-<body> 
+<body>
 	<header></header>
 	<main>
 		<div>
-
 			<?php
 
-			//third
-			require 'index2.php';
-			die();
+			//third - how to create a class and the method to list registers from the database
+			require 'list_users.php';
 
-			//second.
+			//second - how to use methods and attributes with PHP
+			die();
 			require 'Users2.php';
 			$users2 = new Users2();
 			//we're passing the parameters to the method register and printing the result
-			echo $user2->register("Lucas","lucas.roseira@fatec.sp.gov.br","IT support", 26);
-			
+			echo $users2->register("Lucas", "lucas.roseira@fatec.sp.gov.br", "IT support", 26);
 
-			//I'm killing the page here just to reuse the structure because the below code is the first one.
 			die();
+			//I'm killing the page here just to reuse the structure because the below code is the first one.
+
 			?>
 
-			<?php 
+			<?php
 			/*we've to call the other file that contains our class*/
 			require 'Users.php';
 
@@ -44,7 +44,8 @@
 		</div>
 	</main>
 	<footer>
-		
+
 	</footer>
 </body>
+
 </html>
