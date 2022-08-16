@@ -1,0 +1,17 @@
+body {
+	background-image: url('../../img/dvm4p-wallpaper-2048-2.jpg');
+	background-size: cover;
+}
+
+main div {
+	width: 70%;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	padding: 10em;
+	border: 10px solid rgba(167, 137, 238, 0.795);
+	border-radius: 10px;
+	background-color: rgba(167, 147, 238, 0.795);
+}
