@@ -1,18 +1,29 @@
 body {
 	background-image: url('../../img/dvm4p-wallpaper-2048-2.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 main div {
 	width: 70%;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	margin-right: auto;
 	margin-left: auto;
 	justify-content: center;
-	padding: 5em;
+	padding: 1.2em;
 	border: 10px solid rgba(167, 137, 238, 0.795);
 	border-radius: 10px;
 	background-color: rgba(167, 147, 238, 0.795);
 }
+
+footer {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	padding: 1em;
+	justify-content: center;
+	color: #FFF;
+}
+
+
+

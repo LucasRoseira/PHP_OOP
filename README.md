@@ -9,9 +9,8 @@ I'm using XAMPP Control Panel v3.2.4
 -https://www.phpmyadmin.net/
 
 -Host: 127.0.0.1
--empo de geração: 16-Ago-2022 às 21:21
--Versão do servidor: 10.4.14-MariaDB
--versão do PHP: 7.4.10
+-Server version: 10.4.14-MariaDB
+-PHP version: 7.4.10
 
 
 **Running the Project**
