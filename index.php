@@ -15,24 +15,35 @@
 		<div>
 			<?php
 
+			//four - how to use oop inheritance 
+			require 'views/client/Client.php';
+			$client = new Client();
+			$client->street = "Birmingham";
+			$client->neighborhood = "Kingston";
+			$msg = $client->seeAdress();
+			echo $msg;
+			echo '<hr>';
+
+		
+
 			//third - how to create a class and the method to list registers from the database
-			require 'list_users.php';
+			require 'views/users/list_users.php';
 
 			//second - how to use methods and attributes with PHP
-			die();
-			require 'Users2.php';
+		
+			require 'views/users/Users2.php';
 			$users2 = new Users2();
 			//we're passing the parameters to the method register and printing the result
 			echo $users2->register("Lucas", "lucas.roseira@fatec.sp.gov.br", "IT support", 26);
 
-			die();
+		
 			//I'm killing the page here just to reuse the structure because the below code is the first one.
 
 			?>
 
 			<?php
 			/*we've to call the other file that contains our class*/
-			require 'Users.php';
+			require 'views/users/Users.php';
 
 			/*'new' is a reserved word so you can't use it.*/
 			$users = new Users();
@@ -40,12 +51,14 @@
 			/*when we call the method it'll simply return the phrase*/
 			$msg = $users->register();
 			echo $msg;
+
 			?>
 		</div>
 	</main>
 	<footer>
-
+		<p>Lucas Gomes Roseira, <?php echo date("Y"); ?> </p>
 	</footer>
+
 </body>
 
 </html>
