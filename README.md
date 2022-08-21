@@ -17,20 +17,18 @@ _________________________________________
 - PHP version: 7.4.10
 
 
-**Running the Project**
+**Running**
 
 1 - Install XAMPP, you can download here: https://www.apachefriends.org/pt_br/download.html;
 
-2 - Install Xampp;
+2 -  Put your PHP files inside HTDOCS folder that is located in C://xampp/;
 
-3 -  Put your PHP files inside the HTDOCS folder that is located in C://xampp/ (it depends where did you installed it);
+3 - Now, you need to start Apache and MySQL using XAMPP;
 
-4 - Now, you need to start Apache and MySQL using XAMPP;
-
-5 - After that, go to http://localhost/phpmyadmin/ and import the database using the SQL script
+4 - After that, go to http://localhost/phpmyadmin/ and import database using the SQL script
 in this folder: assets/sql/lucas.php ;
 
-6 - Finally, to see the result, you need to open your browser and type "localhost/YOURFOLDER";
+5 - Finally, to see the result, you need to open your browser and type "localhost/YOURFOLDER";
 
 > Obs: 
 
