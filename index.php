@@ -62,9 +62,6 @@
 			//we're passing the parameters to the method register and printing the result
 			echo $users2->register("Lucas", "lucas.roseira@fatec.sp.gov.br", "IT support", 26);
 
-
-			//I'm killing the page here just to reuse the structure because the below code is the first one.
-
 			?>
 
 			<?php
