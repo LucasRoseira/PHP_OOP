@@ -17,8 +17,7 @@ _________________________________________
 
 **Running the Project**
 
-> Install XAMPP;
-1 - You can download here: https://www.apachefriends.org/pt_br/download.html;
+1 - Install XAMPP, you can download here: https://www.apachefriends.org/pt_br/download.html;
 2 - Install Xampp;
 3 -  Put your PHP files inside the HTDOCS folder that is located in C://xampp/ (it depends where did you installed it);
 4 - Now, you need to start Apache and MySQL using XAMPP;
@@ -27,5 +26,6 @@ in this folder: assets/sql/lucas.php ;
 6 - Finally, to see the result, you need to open your browser and type "localhost/YOURFOLDER";
 
 > Obs: 
+
 This's just a study repo thus there're a lot of comments. Don't see it like a serious job.
 Normally, we don't use so many comments because the code must be easy to understand, even without them, if you need to explain everything about your code so isn't a clean code!
