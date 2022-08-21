@@ -1,13 +1,10 @@
 # PHP_OOP
-OOP course to recalling and MVC 
+OOP course to remember and MVC 
 
 you can study here: https://www.udemy.com/course/curso-de-php-orientado-a-objetos/
 _________________________________________
-I'm using XAMPP Control Panel v3.2.4
--phpMyAdmin SQL Dump
--version 5.0.2
--https://www.phpmyadmin.net/
 
+I'm using XAMPP Control Panel v3.2.4
 -Host: 127.0.0.1
 -Server version: 10.4.14-MariaDB
 -PHP version: 7.4.10
@@ -15,7 +12,7 @@ I'm using XAMPP Control Panel v3.2.4
 
 **Running the Project**
 
-Install XAMPP
+> Install XAMPP
 You can download here: https://www.apachefriends.org/pt_br/download.html
 Now you need to start Apache and MySQL using XAMPP.
 
@@ -27,6 +24,6 @@ in assets/sql/lucas.php
 Then you need to open your browser and type "localhost/YOURFOLDER".
 
 
-Obs: 
+> Obs: 
 This is just a study repo thus there're a lot of comments.
 Normally, we don't use so many comments because the code must be easy to understand even without them, if you need to explain everything about your code with comments it is not a clean code!
