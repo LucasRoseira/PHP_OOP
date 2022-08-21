@@ -2,7 +2,7 @@
 class Users
 {
 	public function register() {
-		return "User registered, sucess!<br>";
+		return "User registered, success!<br>";
 	}
 }
 
