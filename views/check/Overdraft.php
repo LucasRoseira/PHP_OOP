@@ -10,6 +10,5 @@ class Overdraft extends Check
 			"amount US$ {$amountWithInterest} <br>");
 	}
 
-
 }
 ?>
