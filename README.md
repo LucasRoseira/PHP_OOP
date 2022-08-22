@@ -8,13 +8,9 @@ _________________________________________
 
 > I'm using
 
-- XAMPP Control Panel v3.2.4
+- XAMPP Control Panel v3.3.0
 
-- Host: 127.0.0.1
-
-- Server version: 10.4.14-MariaDB
-
-- PHP version: 7.4.10
+- PHP version: 8.0.19
 
 
 **Running**
@@ -32,5 +28,5 @@ in this folder: assets/sql/lucas.php ;
 
 > Obs: 
 
-This's just a study repo thus there're a lot of comments. Don't see it like a serious job.
+This is just a study repo thus there're a lot of comments. Don't see it like a serious job.
 Normally, we don't use so many comments because the code must be easy to understand, even without them, if you need to explain everything about your code so isn't a clean code!

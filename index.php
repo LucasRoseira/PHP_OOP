@@ -15,6 +15,25 @@
 		<div>
 			<?php
 
+			//five - abastract class
+			require 'views/check/Check.php'; 
+			require 'views/check/RegularCheck.php'; 
+			require 'views/check/Overdraft.php'; 
+
+			//Abstract class cannot be instantiated
+		    //$check = new Check(207.27, "regular");
+		    //$msg = $check->seeValue();
+		    //echo $msg;
+
+			$regularCheck = new RegularCheck(307.90, 'regular');
+			$msgRegularCheck = $regularCheck->calculateInterest();
+			echo $msgRegularCheck;
+
+			$overdraft = new Overdraft(407.80, 'overdraft');
+			$msgOverdraft = $overdraft->calculateInterest();
+			echo $msgOverdraft;
+
+
 			//four - how to use oop inheritance 
 			require 'views/client/Client.php';
 			require 'views/client/PhysicalClient.php';
