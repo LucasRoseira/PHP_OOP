@@ -21,7 +21,7 @@ class Conn {
 			return $this->connect;
 
 		} catch (Exception $e) {
-			echo "Error: Unuseful connection with database!";
+			echo "Error: Unsuccessful connection with database!";
 			return false;
 		}
 	}
