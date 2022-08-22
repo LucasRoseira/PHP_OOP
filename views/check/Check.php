@@ -9,7 +9,7 @@ When an abstract method is declared, the class must also be declared as abstract
 
 abstract class Check 
 {
-
+	//I need to upgrade my PHP version to use __construct.
 	public function __construct(public float $amount, public string $type)
 	{
 
