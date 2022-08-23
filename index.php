@@ -15,6 +15,29 @@
 		<div>
 			<?php
 
+			//six - how to use inheritance to list database records
+			require 'connection/Conn1.php';
+			require 'views/users/ListUsersInheritance.php';
+
+			$listUsers = new ListUsersInheritence();
+			$listUsers->list();
+			$result_users = $listUsers->list();
+
+			foreach($result_users as $row_user){
+	        	//var_dump($row_user);
+				extract($row_user);
+
+	        	//echo "ID: " . $row_user['id'] . "<br>";
+				echo "ID: $id <br>";
+
+	        	//echo "Name: " . $row_user['name'] . "<br>";
+				echo "Name: $name <br>";
+
+	       		 //echo "E-mail: " . $row_user['email'] . "<br>";
+				echo "E-mail: $email <br>";
+				echo "<hr>";
+			}
+
 			//five - abastract class
 			require 'views/check/Check.php'; 
 			require 'views/check/RegularCheck.php'; 

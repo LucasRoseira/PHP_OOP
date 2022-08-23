@@ -21,8 +21,8 @@ _________________________________________
 
 3 - Now, you need to start Apache and MySQL using XAMPP;
 
-4 - After that, go to http://localhost/phpmyadmin/ and import database using the SQL script
-in this folder: assets/sql/lucas.php ;
+4 - After that, go to http://localhost/phpmyadmin/ and import the databases using the SQL scripts
+in this folder: ./assets/sql/ ;
 
 5 - Finally, to see the result, you need to open your browser and type "localhost/YOURFOLDER";
 
