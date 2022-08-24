@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,10 +13,42 @@
 </head>
 
 <body>
-	<header></header>
+	<header>
+
+	</header>
 	<main>
 		<div>
 			<?php
+
+			//seven - how to use inheritance to create records (I need to create another index for this)
+			if (isset($_SESSION['msg'])) {
+				echo $_SESSION['msg'];
+				unset($_SESSION['msg']);
+			}
+
+			require 'connection/Conn2.php';
+			require 'views/users/User.php';
+
+			$listUsers = new User();
+			$result_users = $listUsers->list();
+
+			foreach ($result_users as $row_user) {
+        		//var_dump($row_user);
+				extract($row_user);
+
+        		//echo "ID: " . $row_user['id'] . "<br>";
+				echo "ID: $id <br>";
+
+       			 //echo "Nome: " . $row_user['name'] . "<br>";
+				echo "Nome: $name <br>";
+
+        		//echo "E-mail: " . $row_user['email'] . "<br>";
+				echo "E-mail: $email <br>";
+				echo "<hr>";
+			}
+
+
+			die();
 
 			//six - how to use inheritance to list database records
 			require 'connection/Conn1.php';
@@ -37,6 +72,7 @@
 				echo "E-mail: $email <br>";
 				echo "<hr>";
 			}
+
 
 			//five - abastract class
 			require 'views/check/Check.php'; 
