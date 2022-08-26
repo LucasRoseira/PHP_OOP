@@ -4,6 +4,7 @@ class User extends Conn2
 {
 	public object $conn;
 	public array $formData;
+	public int $id;
 
 	public function list() :array
 	{

@@ -25,5 +25,14 @@ footer {
 	color: #FFF;
 }
 
+/*I was using inline CSS, but someone that might be reading my code and thinking that 
+I don't know that. So I'm going to use good practices everywhe. 
 
+*/
+p {
+	color: green;
+}
 
+.red{
+	color: #f00;
+}
