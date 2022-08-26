@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,42 +6,46 @@
 </head>
 <body>
 	<nav>	
-		<a href="index.php">Listar</a><br>
-		<a href="create.php">Cadastrar</a><br>
+		<a href="../../index.php">List</a><br>
+		<a href="create.php">Register</a><br>
 
-		<h1>Listar Usuários</h1>
+		<h1>List Users</h1>
 	</nav>
 
 	<?php 	
 
-	require 'connection/Conn2.php';
-	require 'views/users/Users.php';
+	require '../../connection/Conn2.php';
+	require 'User.php';
 
-	if (!empty($formData[SendAddUser])) {
-		$formData = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-		//var_dump($formData);
+	$formData = filter_input_array(INPUT_POST, FILTER_DEFAULT);
+
+	//to fix: data isn't writing to the database.
+
+	//Don't forget the single quotes --> Fatal error: Uncaught Error: Undefined constant "SendAddUser" in C:\xampp\htdocs\poo php\views\users\create.php:25 Stack trace: #0 {main} thrown in C:\xampp\htdocs\poo php\views\users\create.php on line 25
+	if (!empty($formData['SendAddUser'])) {
+		
+		var_dump($formData);
 		$createUser = new User();
 		$createUser->formData = $formData;
 		$value = $createUser->create();
 
 		if($value){
-			$_SESSION['msg'] = "<p style='color: green;'>User registered!</p>";
-			header("Location: index.php");
+			echo "<p>User registered!</p>";
+			
 		}else{
-			echo "<p style='color: #f00;'>Erro: User not registered!</p>";
+			echo "<p class='red'>Erro: User not registered!</p>";
 		}
 	}
 	
-
 	?>
 
+	<!-- action is empty because we're sending data to the same page.-->
 	<form name="CreateUser" method="POST" action="">	
 		<label>Name:</label>
-		<input type="text" name="name" placeholder="Full name" required /><br></br>
+		<input type="text" name="name" placeholder="Full Name" required /><br></br>
 		<label>E-mail:</label>
 		<input type="email" name="email" placeholder="Email" required /><br></br>
-
-		<input type="submit" name="Register" name="SendAddUser" />
+		<input type="submit" name="register" name="SendAddUser" />
 	</form>
 
 </body>

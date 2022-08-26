@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,13 +16,15 @@ session_start();
 	<main>
 		<div>
 			<?php
+			//eight - creating records from the database using inheritance
 
-			//seven - how to use inheritance to create records (I need to create another index for this)
+
 			if (isset($_SESSION['msg'])) {
 				echo $_SESSION['msg'];
 				unset($_SESSION['msg']);
 			}
 
+			//seven - how to use inheritance to create records (I need to create another index for this)
 			require 'connection/Conn2.php';
 			require 'views/users/User.php';
 
@@ -44,11 +43,10 @@ session_start();
 
         		//echo "E-mail: " . $row_user['email'] . "<br>";
 				echo "E-mail: $email <br>";
+
+				echo "<a href='views/users/view.php?id=$id'> View </a></br>";
 				echo "<hr>";
 			}
-
-
-			die();
 
 			//six - how to use inheritance to list database records
 			require 'connection/Conn1.php';
