@@ -23,7 +23,7 @@ class User extends Conn2
 		$this->coonn = $this->connectDb();
 		$query_user = "INSERT INTO users (name, email, created) VALUES (:name, :email, NOW())";
 		$$add_user = $this->conn->prepare($query_user);
-		$addu_user->bindParam(':name', $this->formData['name']);
+		$add_user->bindParam(':name', $this->formData['name']);
 		$add_user->bindParam(':email', $this->formData['email']);
 		$add_user->execute();
 
