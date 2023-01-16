@@ -17,7 +17,8 @@ class User extends Conn2
 
 	}
 
-	public function create() 
+	//you need to know the version of the server BC sometimes the typing might not work, below PHP 7
+	public function create():bool
 	{
 		// var_dump($this->formData);
 		$this->conn = $this->connectDb();
@@ -34,5 +35,3 @@ class User extends Conn2
 		}
 	}
 }
-
-?>

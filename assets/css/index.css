@@ -1,6 +1,7 @@
 body {
-	background-image: url('../../img/dvm4p-wallpaper-2048-2.jpg');
+	background-image: url('../img/dvm4p-wallpaper-2048-2.jpg');
 	background-size: cover;
+	font-family: 'Open Sans' !important;
 }
 
 main div {

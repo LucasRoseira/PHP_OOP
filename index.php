@@ -1,11 +1,19 @@
+<?php
+
+session_start();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="assets//css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 	<script type="text/javascript" src="assets/js/index.js"></script>
-
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
 	<title> Celke - Classes, Objects, Methods and Attributes</title>
 </head>
 
@@ -26,21 +34,18 @@
 			echo '
 			<a href="views/users/create.php">
 				<button>Register</button>
-			</a><br>
-			';
+			</a><br>';
 
+			if (isset($_SESSION['msg'])) {
+				echo $_SESSION['msg'];
+				unset($_SESSION['msg']);
+			}
 
 			/*when we call the method it'll simply return the phrase*/
 
 			?>
 			<?php
 			//eight - creating records from the database using inheritance
-
-
-			if (isset($_SESSION['msg'])) {
-				echo $_SESSION['msg'];
-				unset($_SESSION['msg']);
-			}
 
 			//seven - how to use inheritance to create records (I need to create another index for this)
 			// require 'views/users/User.php';
@@ -91,7 +96,7 @@
 				echo "<hr>";
 			}
 
-
+			die();
 			//five - abastract class
 			require 'views/check/Check.php';
 			require 'views/check/RegularCheck.php';
