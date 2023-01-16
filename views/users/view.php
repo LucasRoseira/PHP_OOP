@@ -26,7 +26,6 @@ $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 	}
 
 	if(!empty($id)) {
-		require '../../connection/Conn2.php';
 		require 'User.php';
 
 		$viewUser = new User();

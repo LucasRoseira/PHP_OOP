@@ -9,7 +9,7 @@ class Conn1{
 	public int $port = 3306; //Verify with server if you need to use the port.
 	public object $connect;
 
-	public function connect() 
+	public function connectDb() 
 	{
 		try {
 			$this->connect = new PDO($this->db . ':host=' . $this->host . ';port=' . $this->port . ';dbname=' .
