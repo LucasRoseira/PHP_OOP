@@ -93,6 +93,8 @@ session_start();
 				//echo "Created: " . $row_user['created'] . "<br>";
 				echo "Created: $created <br>";
 
+				echo "<a href='views/users/view.php?id=$id'>Visualizar</a><br>";
+
 				echo "<hr>";
 			}
 

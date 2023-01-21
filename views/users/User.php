@@ -1,12 +1,12 @@
-<?php 
+<?php
 
-class User extends Conn2 
+class User extends Conn2
 {
 	public object $conn;
 	public array $formData;
 	public int $id;
 
-	public function list() :array
+	public function list(): array
 	{
 		$this->conn = $this->connectDb();
 		$query_users = "SELECT id, name, email, created FROM users ORDER BY id DESC LIMIT 40";
@@ -14,11 +14,10 @@ class User extends Conn2
 		$result_users->execute();
 		$returned = $result_users->fetchAll();
 		return $returned;
-
 	}
 
 	//you need to know the version of the server BC sometimes the typing might not work, below PHP 7
-	public function create():bool
+	public function create(): bool
 	{
 		// var_dump($this->formData);
 		$this->conn = $this->connectDb();
@@ -28,10 +27,28 @@ class User extends Conn2
 		$add_user->bindParam(':email', $this->formData['email']);
 		$add_user->execute();
 
-		if($add_user->rowCount()) {
+		if ($add_user->rowCount()) {
 			return true;
 		} else {
 			return false;
 		}
+	}
+
+	public function view()
+	{
+		$this->conn = $this->connectDb();
+		$query_user = "SELECT id, name, email, created, modified 
+				FROM users
+				WHERE id =:id
+				LIMIT 1";
+
+		$result_user = $this->conn->prepare($query_user);
+		$result_user->bindParam(':id', $this->id);
+		$result_user->execute();
+		$value = $result_user->fetch();
+
+		return $value;
+
+		// var_dump($this->id);
 	}
 }
